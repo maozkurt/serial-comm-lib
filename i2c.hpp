@@ -1,5 +1,5 @@
-#ifndef _I2C_HPP
-#define _I2C_HPP
+#ifndef I2C_HPP
+#define I2C_HPP
 
 #include <iostream>
 #include <cstdint>
@@ -24,6 +24,8 @@ namespace i2c {
         void test(){
             std::cout << i2cfilepath << ' ' << deviceaddress << std::endl;
         }
+        int read(uint8_t registerno);
+        int write(uint8_t registerno, int data);
     };
 }
 
