@@ -17,5 +17,9 @@ sudo i2cdump -y -r 0-7 0 0x08 b
 
 ### Compilation
 ```
-g++ i2c.cpp -li2c
+g++ -Wall -Wextra -li2c main.cpp i2c.cpp
+```
+### Running
+```
+sudo ./a.out
 ```
