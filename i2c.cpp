@@ -27,7 +27,7 @@ int i2c::device::read(uint8_t registerno){
 }
 
 int i2c::device::write(uint8_t registerno, int data){
-    int status = i2c_smbus_write_word_data(getfileno(), registerno,data);
+    int status = i2c_smbus_write_word_data(getfileno(), registerno, data);
     if(status < 0){
         std::cerr << "Error in i2c write transaction" << std::endl;
     }

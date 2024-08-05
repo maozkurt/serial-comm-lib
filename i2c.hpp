@@ -1,9 +1,10 @@
-#ifndef I2C_HPP
-#define I2C_HPP
+#ifndef SCL_I2C_HPP
+#define SCL_I2C_HPP
 
 #include <iostream>
 #include <cstdint>
 #include <string>
+#include <fstream>
 extern "C"{
     #include <linux/i2c-dev.h>
     #include <i2c/smbus.h>
@@ -29,4 +30,4 @@ namespace i2c {
     };
 }
 
-#endif
+#endif // SCL_I2C_HPP
